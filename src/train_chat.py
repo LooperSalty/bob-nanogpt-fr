@@ -129,9 +129,8 @@ def main() -> None:
         json.dumps(
             {
                 "status": "done",
-                "base_vocab": base.vocab_size,
                 "vocab_size": tok.vocab_size,
-                "specials": tok.special_to_id,
+                "specials": {"pad": tok.PAD, "user": tok.USER, "bot": tok.BOT, "end": tok.END},
                 "n_examples": len(data),
                 "history": history,
                 "elapsed_sec": round(time.time() - start, 1),
