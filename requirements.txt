@@ -1,0 +1,16 @@
+# PyTorch — installation GPU (CUDA 12.8) sur cette machine (RTX 4070 SUPER, Ada/sm_89).
+#
+# ATTENTION : un simple `pip install torch` télécharge le build CPU.
+# Pour (ré)installer le build GPU, utiliser l'index CUDA dédié :
+#
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+#
+# Repli CPU (machine sans GPU NVIDIA) :
+#   pip install torch
+#
+torch>=2.11
+
+# Interface web (Étape 7) : backend FastAPI + serveur ASGI
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2

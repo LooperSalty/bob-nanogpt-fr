@@ -1,0 +1,22 @@
+# Données et modèles (volumineux, régénérables — voir le README)
+data/
+checkpoints/
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
